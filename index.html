@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif">
+
+    <h2>Rock Paper Scissors</h2>
+
+    <div class="boxBlock">
+        <h2>First player</h2>
+        <img src="rock.png" id="player1RockImage" class="movementImage" onclick="move(1, 'rock');">
+        <img src="paper.png" id="player1PaperImage" class="movementImage" onclick="move(1, 'paper');">
+        <img src="scissors.png" id="player1ScissorsImage" class="movementImage" onclick="move(1, 'scissors');">
+
+    </div><div id="centerBlock" class="boxBlock">
+        <h2 id="gameMode">Player vs Player</h2>
+
+        <table width="100%">
+            <td width="37%" style="text-align: right">Player 1</td>
+            <td width="26%">Draw</td>
+            <td width="37%" style="text-align: left">Player 2</td>
+        </table>
+
+        <div id="firstPlayerStatistics" class="statBlock">0</div>
+        <div id="drawStatistics" class="statBlock">0</div>
+        <div id="secondPlayerStatistics" class="statBlock">0</div><p>
+
+        <table id="scoreboard" border="1px">
+            <tr>
+                <td>Player 1</td>
+                <td>Player 2</td>
+                <td>Winner</td>
+            </tr>
+        </table>
+
+        <button id="modeChangeButton" onclick="changeMode()">Change Game Mode</button><br>
+        <button id="restartButton" onclick="restartGame()">New Game</button><br>
+
+    </div><div class="boxBlock">
+        <h2>Second player</h2>
+        <img src="rock_opp.png" id="player2RockImage" class="movementImage" onclick="move(2, 'rock');">
+        <img src="paper_opp.png" id="player2PaperImage" class="movementImage" onclick="move(2, 'paper');">
+        <img src="scissors_opp.png" id="player2ScissorsImage" class="movementImage" onclick="move(2, 'scissors');">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

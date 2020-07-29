@@ -1,0 +1,76 @@
+body {
+    width: 672px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #E0E0E0;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.boxBlock {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    width: 180px;
+    background-color: white;
+    height: 490px;
+    padding: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#centerBlock {
+    width: 264px;
+}
+
+.statBlock {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-left: 3px;
+    margin-right: 3px;
+    vertical-align: middle;
+    line-height: 55px;
+    background-color: #E0E0E0;
+    font-size: 40px;
+}
+
+#modeChangeButton {
+    position: absolute;
+    bottom: 55px;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    padding: 5px;
+    margin: 3px;
+}
+
+#restartButton {
+    position: absolute;
+    bottom: 15px;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    padding: 5px;
+    margin: 3px;
+}
+
+.movementImage {
+    width: 150px;
+}
+.movementImage:active {
+    filter: drop-shadow(3px 3px 3px #333)
+}
+
+#scoreboard {
+    width: 100%;
+    border: 1px black;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
